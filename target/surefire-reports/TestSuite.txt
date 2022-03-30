@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 149.918 s <<< FAILURE! - in TestSuite
+com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.navigateHomeFromPopularMakePage  Time elapsed: 106.058 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //my-home/div/div[1]/div/h2 (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:4d1:f41e:1fd3:72b2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.83, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/22ll6rh5657...}, goog:chromeOptions: {debuggerAddress: localhost:52325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52325/devtoo..., se:cdpVersion: 99.0.4844.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a93cc0425df04f4cc3f79cfbf39e1
+	at com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.navigateHomeFromPopularMakePage(BuggyCarsRatingPageNavigationTest.java:57)
+
+com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest.fillAdditionalInfo  Time elapsed: 0.259 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/buggy/rating/automate/beans/BasicInfoBean
+	at com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest.fillAdditionalInfo(BuggyCarsRatingAdditionalInfoChangeTest.java:46)
+Caused by: java.lang.ClassNotFoundException: com.buggy.rating.automate.beans.BasicInfoBean
+	at com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest.fillAdditionalInfo(BuggyCarsRatingAdditionalInfoChangeTest.java:46)
+

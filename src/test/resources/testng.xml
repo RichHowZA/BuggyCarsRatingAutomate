@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Buggy cars validation" verbose="1">
+    <test name="Buggy cars Rating validation Tests">
+                <classes>
+                    <class name="com.buggy.rating.automate.BuggyCarsRatingLoginTest"/>
+                    <class name="com.buggy.rating.automate.BuggyCarsRatingRegisterTest"/>
+                    <class name="com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest"/>
+                    <class name="com.buggy.rating.automate.BuggyCarsRatingVotingTest"/>
+                    <class name="com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest"/>
+                </classes>
+    </test>
+</suite>

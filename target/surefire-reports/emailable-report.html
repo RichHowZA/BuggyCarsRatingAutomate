@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">148,281</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest</td><td><a href="#m0">fillAdditionalInfo</a></td><td rowspan="1">1648568981162</td><td rowspan="1">260</td></tr><tr class="failedodd"><td rowspan="1">com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest</td><td><a href="#m1">navigateHomeFromPopularMakePage</a></td><td rowspan="1">1648568857843</td><td rowspan="1">106011</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest</td><td><a href="#m2">loginWithUser</a></td><td rowspan="1">1648568979972</td><td rowspan="1">1189</td></tr><tr class="passedodd"><td rowspan="1">com.buggy.rating.automate.BuggyCarsRatingLoginTest</td><td><a href="#m3">performLogin</a></td><td rowspan="1">1648568969608</td><td rowspan="1">1236</td></tr><tr class="passedeven"><td rowspan="3">com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest</td><td><a href="#m4">navigateHomeFromOverallRatingPage</a></td><td rowspan="1">1648568856562</td><td rowspan="1">1279</td></tr><tr class="passedeven"><td><a href="#m5">navigateHomeFromProfilePage</a></td><td rowspan="1">1648568963893</td><td rowspan="1">720</td></tr><tr class="passedeven"><td><a href="#m6">performLogin</a></td><td rowspan="1">1648568855419</td><td rowspan="1">1142</td></tr><tr class="passedodd"><td rowspan="3">com.buggy.rating.automate.BuggyCarsRatingRegisterTest</td><td><a href="#m7">loginWithNewUser</a></td><td rowspan="1">1648568851150</td><td rowspan="1">827</td></tr><tr class="passedodd"><td><a href="#m8">navigateToRegisterPage</a></td><td rowspan="1">1648568849659</td><td rowspan="1">348</td></tr><tr class="passedodd"><td><a href="#m9">registerNewUser</a></td><td rowspan="1">1648568850014</td><td rowspan="1">1135</td></tr><tr class="passedeven"><td rowspan="4">com.buggy.rating.automate.BuggyCarsRatingVotingTest</td><td><a href="#m10">loginWithNewUser</a></td><td rowspan="1">1648568972216</td><td rowspan="1">861</td></tr><tr class="passedeven"><td><a href="#m11">navigateToRegisterPage</a></td><td rowspan="1">1648568970977</td><td rowspan="1">214</td></tr><tr class="passedeven"><td><a href="#m12">registerNewUser</a></td><td rowspan="1">1648568971191</td><td rowspan="1">1024</td></tr><tr class="passedeven"><td><a href="#m13">voteACar</a></td><td rowspan="1">1648568973078</td><td rowspan="1">2135</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest#fillAdditionalInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: com/buggy/rating/automate/beans/BasicInfoBean
+	at com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest.fillAdditionalInfo(BuggyCarsRatingAdditionalInfoChangeTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+Caused by: java.lang.ClassNotFoundException: com.buggy.rating.automate.beans.BasicInfoBean
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 34 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest#navigateHomeFromPopularMakePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //my-home/div/div[1]/div/h2 (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;Admins-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4d1:f41e:1fd3:72b2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.83, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/22ll6rh5657...}, goog:chromeOptions: {debuggerAddress: localhost:52325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52325/devtoo..., se:cdpVersion: 99.0.4844.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a93cc0425df04f4cc3f79cfbf39e1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.buggy.rating.automate.pages.BuggyCarsLandingPage.verifyLandingPage(BuggyCarsLandingPage.java:46)
+	at com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.navigateHomeFromPopularMakePage(BuggyCarsRatingPageNavigationTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest#loginWithUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.buggy.rating.automate.BuggyCarsRatingLoginTest#performLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest#navigateHomeFromOverallRatingPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest#navigateHomeFromProfilePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest#performLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.buggy.rating.automate.BuggyCarsRatingRegisterTest#loginWithNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.buggy.rating.automate.BuggyCarsRatingRegisterTest#navigateToRegisterPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.buggy.rating.automate.BuggyCarsRatingRegisterTest#registerNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.buggy.rating.automate.BuggyCarsRatingVotingTest#loginWithNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.buggy.rating.automate.BuggyCarsRatingVotingTest#navigateToRegisterPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.buggy.rating.automate.BuggyCarsRatingVotingTest#registerNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.buggy.rating.automate.BuggyCarsRatingVotingTest#voteACar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

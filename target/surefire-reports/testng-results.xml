@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-30T04:47:13 NZDT" name="Surefire suite" finished-at="2022-03-30T04:49:41 NZDT" duration-ms="148281">
+    <groups>
+    </groups>
+    <test started-at="2022-03-30T04:47:13 NZDT" name="Surefire test" finished-at="2022-03-30T04:49:41 NZDT" duration-ms="148281">
+      <class name="com.buggy.rating.automate.BuggyCarsRatingLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingLoginTest@3382f8ae]" started-at="2022-03-30T04:49:24 NZDT" name="setUp" finished-at="2022-03-30T04:49:29 NZDT" duration-ms="4727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="performLogin()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingLoginTest@3382f8ae]" started-at="2022-03-30T04:49:29 NZDT" name="performLogin" finished-at="2022-03-30T04:49:30 NZDT" duration-ms="1236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingLoginTest@3382f8ae]" started-at="2022-03-30T04:49:30 NZDT" name="tearDown" finished-at="2022-03-30T04:49:30 NZDT" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.buggy.rating.automate.BuggyCarsRatingLoginTest -->
+      <class name="com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest@75f65e45]" started-at="2022-03-30T04:49:35 NZDT" name="setUp" finished-at="2022-03-30T04:49:39 NZDT" duration-ms="4544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithUser()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest@75f65e45]" started-at="2022-03-30T04:49:39 NZDT" name="loginWithUser" finished-at="2022-03-30T04:49:41 NZDT" duration-ms="1189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithUser -->
+        <test-method signature="fillAdditionalInfo()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest@75f65e45]" started-at="2022-03-30T04:49:41 NZDT" name="fillAdditionalInfo" finished-at="2022-03-30T04:49:41 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest.loginWithUser" duration-ms="260" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/buggy/rating/automate/beans/BasicInfoBean]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/buggy/rating/automate/beans/BasicInfoBean
+at com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest.fillAdditionalInfo(BuggyCarsRatingAdditionalInfoChangeTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.lang.ClassNotFoundException: com.buggy.rating.automate.beans.BasicInfoBean
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillAdditionalInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest@75f65e45]" started-at="2022-03-30T04:49:41 NZDT" name="tearDown" finished-at="2022-03-30T04:49:41 NZDT" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.buggy.rating.automate.BuggyCarsRatingAdditionalInfoChangeTest -->
+      <class name="com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest@40cb698e]" started-at="2022-03-30T04:47:32 NZDT" name="setUp" finished-at="2022-03-30T04:47:35 NZDT" duration-ms="3327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="performLogin()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest@40cb698e]" started-at="2022-03-30T04:47:35 NZDT" name="performLogin" finished-at="2022-03-30T04:47:36 NZDT" duration-ms="1142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performLogin -->
+        <test-method signature="navigateHomeFromOverallRatingPage()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest@40cb698e]" started-at="2022-03-30T04:47:36 NZDT" name="navigateHomeFromOverallRatingPage" finished-at="2022-03-30T04:47:37 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.performLogin" duration-ms="1279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateHomeFromOverallRatingPage -->
+        <test-method signature="navigateHomeFromPopularMakePage()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest@40cb698e]" started-at="2022-03-30T04:47:37 NZDT" name="navigateHomeFromPopularMakePage" finished-at="2022-03-30T04:49:23 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.performLogin" duration-ms="106011" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //my-home/div/div[1]/div/h2 (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:4d1:f41e:1fd3:72b2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.83, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/22ll6rh5657...}, goog:chromeOptions: {debuggerAddress: localhost:52325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52325/devtoo..., se:cdpVersion: 99.0.4844.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a93cc0425df04f4cc3f79cfbf39e1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //my-home/div/div[1]/div/h2 (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'Admins-MacBook-Pro.local', ip: 'fe80:0:0:0:4d1:f41e:1fd3:72b2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '11.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.83, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/2t/22ll6rh5657...}, goog:chromeOptions: {debuggerAddress: localhost:52325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52325/devtoo..., se:cdpVersion: 99.0.4844.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 127a93cc0425df04f4cc3f79cfbf39e1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.buggy.rating.automate.pages.BuggyCarsLandingPage.verifyLandingPage(BuggyCarsLandingPage.java:46)
+at com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.navigateHomeFromPopularMakePage(BuggyCarsRatingPageNavigationTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateHomeFromPopularMakePage -->
+        <test-method signature="navigateHomeFromProfilePage()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest@40cb698e]" started-at="2022-03-30T04:49:23 NZDT" name="navigateHomeFromProfilePage" finished-at="2022-03-30T04:49:24 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest.performLogin" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateHomeFromProfilePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest@40cb698e]" started-at="2022-03-30T04:49:24 NZDT" name="tearDown" finished-at="2022-03-30T04:49:24 NZDT" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.buggy.rating.automate.BuggyCarsRatingPageNavigationTest -->
+      <class name="com.buggy.rating.automate.BuggyCarsRatingRegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingRegisterTest@72758afa]" started-at="2022-03-30T04:47:25 NZDT" name="setUp" finished-at="2022-03-30T04:47:29 NZDT" duration-ms="3863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigateToRegisterPage()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingRegisterTest@72758afa]" started-at="2022-03-30T04:47:29 NZDT" name="navigateToRegisterPage" finished-at="2022-03-30T04:47:30 NZDT" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="registerNewUser()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingRegisterTest@72758afa]" started-at="2022-03-30T04:47:30 NZDT" name="registerNewUser" finished-at="2022-03-30T04:47:31 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingRegisterTest.navigateToRegisterPage" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerNewUser -->
+        <test-method signature="loginWithNewUser()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingRegisterTest@72758afa]" started-at="2022-03-30T04:47:31 NZDT" name="loginWithNewUser" finished-at="2022-03-30T04:47:31 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingRegisterTest.registerNewUser" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingRegisterTest@72758afa]" started-at="2022-03-30T04:47:31 NZDT" name="tearDown" finished-at="2022-03-30T04:47:32 NZDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.buggy.rating.automate.BuggyCarsRatingRegisterTest -->
+      <class name="com.buggy.rating.automate.BuggyCarsRatingVotingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingVotingTest@60641ec8]" started-at="2022-03-30T04:47:13 NZDT" name="setUp" finished-at="2022-03-30T04:47:25 NZDT" duration-ms="12437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigateToRegisterPage()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingVotingTest@60641ec8]" started-at="2022-03-30T04:49:30 NZDT" name="navigateToRegisterPage" finished-at="2022-03-30T04:49:31 NZDT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegisterPage -->
+        <test-method signature="registerNewUser()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingVotingTest@60641ec8]" started-at="2022-03-30T04:49:31 NZDT" name="registerNewUser" finished-at="2022-03-30T04:49:32 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingVotingTest.navigateToRegisterPage" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerNewUser -->
+        <test-method signature="loginWithNewUser()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingVotingTest@60641ec8]" started-at="2022-03-30T04:49:32 NZDT" name="loginWithNewUser" finished-at="2022-03-30T04:49:33 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingVotingTest.registerNewUser" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithNewUser -->
+        <test-method signature="voteACar()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingVotingTest@60641ec8]" started-at="2022-03-30T04:49:33 NZDT" name="voteACar" finished-at="2022-03-30T04:49:35 NZDT" depends-on-methods="com.buggy.rating.automate.BuggyCarsRatingVotingTest.loginWithNewUser" duration-ms="2135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voteACar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggy.rating.automate.BuggyCarsRatingVotingTest@60641ec8]" started-at="2022-03-30T04:49:35 NZDT" name="tearDown" finished-at="2022-03-30T04:49:35 NZDT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.buggy.rating.automate.BuggyCarsRatingVotingTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
